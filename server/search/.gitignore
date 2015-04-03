@@ -1,3 +1,8 @@
 *
 !.gitignore
 !Readme.md
+!/src/
+/src/*
+!/src/main/
+/src/main/*
+!/src/main/java/**
