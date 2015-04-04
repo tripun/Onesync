@@ -7,7 +7,7 @@ import java.util.Date;
  *  File class, store all file related information
  */
 
-public class File implements Serializable {
+public class CloudFile implements Serializable {
 
 	/**
 	 * 
@@ -21,24 +21,19 @@ public class File implements Serializable {
 	 */
 
 	private long fileId;
-
 	private String filename;
-
 	private String relativePath;
-
 	private int cloudId;
-
 	private String cloudUrl;
-
 	private long filesize;
-
 	private Date createdOn;
 	private Date modifiedOn;
+	private String owner;
 	private boolean isFolder;
 	private boolean isDeleted;
 	private boolean isShared;
 
-	public File() {
+	public CloudFile() {
 
 	}
 
@@ -128,6 +123,14 @@ public class File implements Serializable {
 
 	public void setShared(boolean isShared) {
 		this.isShared = isShared;
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
 	}
 
 }

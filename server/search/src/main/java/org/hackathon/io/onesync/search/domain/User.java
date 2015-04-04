@@ -26,6 +26,8 @@ public class User implements Serializable {
 	private String firstName;
 
 	private String lastName;
+	
+	private String email;
 
 	private Map<Integer, String> subscription;
 
@@ -79,6 +81,14 @@ public class User implements Serializable {
 
 	public void setSubscription(Map<Integer, String> subscription) {
 		this.subscription = subscription;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }
